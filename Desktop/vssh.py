@@ -1,4 +1,4 @@
-"""Find the IP address of a VirtualBox virtual machine and ssh into it."""
+"""Find the IP address of a VirtualBox virtual machine and ssh into it. Add or update /etc/hosts entries upon user interaction."""
 
 import os
 import subprocess
