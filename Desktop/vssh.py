@@ -109,7 +109,7 @@ def main():  # Define as a function to adhere to style guidelines
         virtualbox_ip = subprocess.Popen(["VBoxManage", "guestproperty", "get", sys.argv[1], "/VirtualBox/GuestInfo/Net/0/V4/IP"], stdout=subprocess.PIPE)
         ip_response = virtualbox_ip.communicate()[0]
         if ip_response == "No value set!\n":
-            print "Could not find the virtual machine's IP address. Are network settings configured correctly?"
+            print "Could not find the virtual machine's IP address. Are network settings configured correctly and are VirtualBox Guest additions installed on the virtual machine?"
             return
 
         if find_host(sys.argv[1]):
