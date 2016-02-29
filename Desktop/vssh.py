@@ -70,8 +70,6 @@ def update_host(address, name):
         else:
             new_hosts.append(line)
 
-    print new_hosts
-
     temp_hosts = open("/tmp/etc_hosts.tmp", "wt")
     temp_hosts.writelines(new_hosts)
 
